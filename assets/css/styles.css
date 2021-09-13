@@ -262,7 +262,7 @@
     cursor: pointer;
 }
 .big-img {
-    background: url(/assets/img/big-img.jpg) top center /cover no-repeat;
+    background: url(../img/big-img.jpg) top center /cover no-repeat;
     padding-top: 56.2%;
     filter: grayscale(50%);
 }
