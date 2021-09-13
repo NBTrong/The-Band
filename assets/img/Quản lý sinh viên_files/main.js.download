@@ -1,0 +1,38 @@
+//function
+var profileApi = "http://localhost:3000/profile";
+
+function getProfile(){
+    fetch(profileApi)
+    .then(function(respons){
+        return respons.json();
+    })
+    .then(function renderHtml(data){
+         var html = data.map(function(respon){
+         return `<tr class="student">
+            <th style="padding-right: 75px;">${respon.mssv}</th>
+            <th style="padding-right: 75px;">Đệm</th>
+            <th style="padding-right: 75px;">Họ</th>
+            <th style="padding-right: 75px;">Tên</th>
+            <th style="padding-right: 75px;">Ngày sinh</th>
+            <th style="padding-right: 75px;">Tên lớp</th>
+            <th style="padding-right: 100px;">Chương trình đào tạo</th>
+            <th style="padding-right: 75px;">Trạng thái</th>
+                </tr>`
+    })
+        console.log(html);
+        var tableElement = document.querySelector('#content .students-total table');
+        console.log(tableElement);
+        console.log(html.join(""));
+        tableElement.innerHTML = html.join("<br>");
+        //  var htmls = html.jojn(' ');
+        //  console.log(htmls);
+        //  document.querySelector('table').innerHTML = htmls;
+    
+    })
+    .catch(function(errol){
+        console.log("Loi mang");
+    })
+}
+
+//main
+getProfile();

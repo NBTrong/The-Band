@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#content .student-box {
+    float: left;
+    width: 25%;
+}
+#content .students-total {
+    float: left;
+    width: 75%;
+    text-align: center;
+    padding: 10px 10px;
+}
+#content .students-total .header {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8c1515;
+    margin-top: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+}
+#content .students-total table .tieu-de th {
+    font-size: 14px;
+    padding: 4px 6px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #8c1515;
+    color: white;
+    display: inline-block;
+}
+#content .students-total table .student th {
+    font-size: 14px;
+    padding: 4px 6px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    display: inline-block;
+}
